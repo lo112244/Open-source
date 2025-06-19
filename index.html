@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易绘图工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>简易绘图工具 <span id="current-tool">(画笔)</span></h1>
+        
+        <div class="toolbar">
+            <button id="pencil" class="active">画笔</button>
+            <button id="eraser">橡皮擦</button>
+            <input type="color" id="color-picker" value="#000000">
+            <input type="range" id="brush-size" min="1" max="50" value="5">
+            <span id="brush-size-value">5px</span>
+            <button id="clear">清空画布</button>
+            <button id="save">保存图片</button>
+        </div>
+        
+        <div class="canvas-container">
+            <canvas id="drawing-canvas"></canvas>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
